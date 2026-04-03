@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Komal Sanjay Maske | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="nav-logo">KSM</div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#modules">Modules</a></li>
+      <li><a href="#fablab">FabLab</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-bg-text" aria-hidden="true">KSM</div>
+    <div class="hero-content">
+      <p class="hero-greeting fade-up">Hello, I'm</p>
+      <h1 class="hero-name fade-up delay-1">
+        <span class="name-line">Komal</span>
+        <span class="name-line accent">Sanjay</span>
+        <span class="name-line">Maske</span>
+      </h1>
+      <p class="hero-subtitle fade-up delay-2">
+        B.E Electronics &amp; Telecommunication Student<br />
+        <span class="college">Shri Sant Gajanan Maharaj College of Engineering, Shegaon</span>
+      </p>
+      <div class="hero-buttons fade-up delay-3">
+        <a href="#contact" class="btn btn-primary">Contact Me</a>
+        <a href="#about" class="btn btn-outline">Learn More</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="section-label">01 — About</div>
+    <h2 class="section-title">Introduction</h2>
+    <div class="about-grid">
+      <div class="about-image-wrap fade-left">
+        <!--
+          Add your photo:
+          1. Place a photo named "profile.jpg" inside an "images/" folder
+          2. It will appear here automatically
+        -->
+        <div class="about-img-placeholder">
+          <img src="images/profile.jpg" alt="Komal Sanjay Maske"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <div class="img-fallback">KSM</div>
+        </div>
+        <div class="about-accent-box"></div>
+      </div>
+      <div class="about-text fade-right">
+        <p>I am a passionate student exploring new technologies. I love building real-world projects that combine hardware and software, bridging the gap between the digital and physical world.</p>
+        <p>My journey in electronics and web development has taught me the power of creating solutions that make a difference.</p>
+        <ul class="about-details">
+          <li><span class="detail-icon">👤</span> Komal Sanjay Maske</li>
+          <li><span class="detail-icon">📞</span> 9226731442</li>
+          <li><span class="detail-icon">✉️</span> komalmaske241@gmail.com</li>
+          <li><span class="detail-icon">📍</span> Morshi, Dist. Amravati — 444905</li>
+        </ul>
+        <!-- CV PDF is included in the repo as Komal.pdf -->
+        <a href="Komal.pdf" class="btn btn-primary" download="Komal_Maske_CV.pdf">⬇ Download CV</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section section-alt">
+    <div class="section-label">02 — Skills</div>
+    <h2 class="section-title">What I Know</h2>
+    <div class="skills-grid">
+      <div class="skill-item fade-up">
+        <div class="skill-header"><span class="skill-name">HTML</span><span class="skill-percent">90%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+      </div>
+      <div class="skill-item fade-up delay-1">
+        <div class="skill-header"><span class="skill-name">CSS</span><span class="skill-percent">80%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+      </div>
+      <div class="skill-item fade-up delay-2">
+        <div class="skill-header"><span class="skill-name">JavaScript</span><span class="skill-percent">70%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+      </div>
+      <div class="skill-item fade-up delay-3">
+        <div class="skill-header"><span class="skill-name">C / C++</span><span class="skill-percent">75%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MODULES ===== -->
+  <section id="modules" class="section">
+    <div class="section-label">03 — Modules</div>
+    <h2 class="section-title">What I Study</h2>
+    <div class="modules-grid" id="modules-grid">
+      <div class="module-card clickable fade-up" data-modal="modal-webdev" tabindex="0" role="button" aria-label="Web Development">
+        <div class="module-icon">🌐</div>
+        <h3>Web Development</h3>
+        <span class="module-badge">Click to Explore</span>
+      </div>
+      <div class="module-card clickable fade-up delay-1" data-modal="modal-uiux" tabindex="0" role="button" aria-label="UI/UX Design">
+        <div class="module-icon">🎨</div>
+        <h3>UI/UX Design</h3>
+        <span class="module-badge">Click to Explore</span>
+      </div>
+      <div class="module-card fade-up delay-2">
+        <div class="module-icon">✏️</div>
+        <h3>Computer Aided Design</h3>
+      </div>
+      <div class="module-card fade-up delay-3">
+        <div class="module-icon">🔒</div>
+        <h3>Cyber Security &amp; Networking</h3>
+      </div>
+      <div class="module-card fade-up">
+        <div class="module-icon">☕</div>
+        <h3>Java Programming</h3>
+      </div>
+      <div class="module-card fade-up delay-1">
+        <div class="module-icon">🤖</div>
+        <h3>AIML</h3>
+      </div>
+      <div class="module-card fade-up delay-2">
+        <div class="module-icon">🔌</div>
+        <h3>PCB</h3>
+      </div>
+      <div class="module-card fade-up delay-3">
+        <div class="module-icon">📡</div>
+        <h3>IoT</h3>
+      </div>
+      <div class="module-card fade-up">
+        <div class="module-icon">🖨️</div>
+        <h3>3D Printing &amp; Design</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       MODAL: WEB DEVELOPMENT
+       ==================================================== -->
+  <div class="modal-overlay" id="modal-webdev" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <button class="modal-close" data-close="modal-webdev" aria-label="Close modal">✕</button>
+      <h2 class="modal-title">🌐 My Learning Journey — Web Development</h2>
+
+      <div class="day-index" data-group="wd">
+        <button class="day-tab active" data-day="wd-day1">Day 1</button>
+        <button class="day-tab" data-day="wd-day2">Day 2</button>
+        <button class="day-tab" data-day="wd-day3">Day 3</button>
+        <button class="day-tab" data-day="wd-day4">Day 4</button>
+        <button class="day-tab" data-day="wd-day5">Day 5</button>
+        <button class="day-tab" data-day="wd-day6">Day 6</button>
+        <button class="day-tab" data-day="wd-day7">Day 7</button>
+      </div>
+
+      <!-- WD Day 1 -->
+      <div class="day-content active" id="wd-day1">
+        <h3>Day 1 — HTML Basics</h3>
+        <p>On the 1st day I learned the basics of HTML. I learned how to structure a webpage, explored various HTML tags like headings, paragraphs, bold, italic, underline, lists, marquee, font, and images. I also practiced adding audio and links. My first assignment was creating an SSGMCE info page.</p>
+        <div class="assignment-images">
+          <figure class="assignment-img-wrap">
+            <img src="images/assignments/day1.jpg" alt="Day 1 — HTML Basics Assignment" loading="lazy" />
+            <figcaption>Day 1 — HTML Structure, Tags, Images &amp; Audio in VS Code</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <!-- WD Day 2 -->
+      <div class="day-content" id="wd-day2">
+        <h3>Day 2 — Tables &amp; Links</h3>
+        <p>Day 2 covered HTML tables using <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, <code>&lt;td&gt;</code> with attributes like <code>border</code>, <code>cellpadding</code>, <code>cellspacing</code>, <code>bgcolor</code>, <code>rowspan</code>, and <code>colspan</code>. I built a marks table and a student info table.</p>
+        <div class="assignment-images">
+          <figure class="assignment-img-wrap">
+            <img src="images/assignments/day2.jpg" alt="Day 2 — HTML Tables Assignment" loading="lazy" />
+            <figcaption>Day 2 — HTML Tables: Branch Seats Cut-off &amp; Student Info (Name, Age, Gender)</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <!-- WD Day 3 -->
+      <div class="day-content" id="wd-day3">
+        <h3>Day 3 — Introduction to CSS Selectors</h3>
+        <p>Day 3 introduced CSS: element selectors (styling all <code>p</code> tags with <code>color: blue; font-size: 18px</code>) and class selectors (using <code>.highlight</code> with brown background and cadetblue text). I practiced writing both in separate HTML files.</p>
+        <div class="assignment-images">
+          <figure class="assignment-img-wrap">
+            <img src="images/assignments/day3.jpg" alt="Day 3 — CSS Selectors Assignment" loading="lazy" />
+            <figcaption>Day 3 — CSS Element Selector &amp; Class Selector Examples</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <!-- WD Day 4 -->
+      <div class="day-content" id="wd-day4">
+        <h3>Day 4 — CSS Flexbox</h3>
+        <p>Day 4 explored CSS Flexbox layout. I used <code>display: flex</code>, <code>justify-content: space-between</code>, <code>align-items: center</code>, and <code>flex-direction: row</code> to arrange 8 numbered boxes inside a blue-violet container. Each box had dark sea green background and brown text.</p>
+        <div class="assignment-images">
+          <figure class="assignment-img-wrap">
+            <img src="images/assignments/day4.jpg" alt="Day 4 — CSS Flexbox" loading="lazy" />
+            <figcaption>Day 4 — CSS Flexbox: 8 Boxes Layout with Container</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <!-- WD Day 5 -->
+      <div class="day-content" id="wd-day5">
+        <h3>Day 5 — Advanced CSS &amp; To-Do App Styling</h3>
+        <p>Day 5 covered advanced CSS: border-radius, box-shadow, padding, margin, and background-color for creating card-like UI. I styled the To-Do List app container with <code>rgb(156,222,252)</code> background, border-radius 15px, and box-shadow. Also added a styled header with font-size 1.7em.</p>
+        <div class="assignment-images">
+          <figure class="assignment-img-wrap">
+            <img src="images/assignments/day5.jpg" alt="Day 5 — Advanced CSS Styling" loading="lazy" />
+            <figcaption>Day 5 — Advanced CSS: Box Model, Box-Shadow &amp; To-Do App Styling</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <!-- WD Day 6 -->
+      <div class="day-content" id="wd-day6">
+        <h3>Day 6 — JavaScript Basics</h3>
+        <p>Day 6 introduced JavaScript. I declared variables using <code>var</code>, performed arithmetic operations (subtraction), used comparison operators (<code>&gt;</code>, <code>&gt;&gt;</code>), logical operators, and <code>console.log()</code> to print output. I ran the JS file using Node.js in the VS Code terminal and saw outputs like 100, true, 2, 0, 1.</p>
+        <div class="assignment-images">
+          <figure class="assignment-img-wrap">
+            <img src="images/assignments/day6.jpg" alt="Day 6 — JavaScript Basics" loading="lazy" />
+            <figcaption>Day 6 — JS Variables, Operators &amp; console.log() Output in Node.js Terminal</figcaption>
+          </figure>
+        </div>
+        <div class="day-links">
+          <p class="links-label">📂 My Assignment Files (click to open):</p>
+          <a href="Komal_form.html" target="_blank" rel="noopener" class="day-link-btn">📄 HTML Form Assignment</a>
+          <a href="My_journey.html" target="_blank" rel="noopener" class="day-link-btn">📄 My CSS Journey Page</a>
+          <a href="marks3.html" target="_blank" rel="noopener" class="day-link-btn">📄 Marks Table Assignment</a>
+        </div>
+      </div>
+
+      <!-- WD Day 7 -->
+      <div class="day-content" id="wd-day7">
+        <h3>Day 7 — Advanced JavaScript &amp; Final Projects</h3>
+        <p>Day 7 covered advanced JavaScript concepts: DOM manipulation, event listeners (<code>onclick</code>), dynamic HTML creation, and building an interactive To-Do list application. I also consolidated everything by creating my personal portfolio and other web pages as final projects.</p>
+        <div class="assignment-images">
+          <figure class="assignment-img-wrap">
+            <img src="images/assignments/day7.jpg" alt="Day 7 — Advanced JavaScript" loading="lazy" />
+            <figcaption>Day 7 — Advanced JS: To-Do App with DOM Manipulation in VS Code</figcaption>
+          </figure>
+        </div>
+        <div class="day-links">
+          <p class="links-label">📂 Final Project Files (click to open):</p>
+          <a href="Portfolio.html" target="_blank" rel="noopener" class="day-link-btn">🌐 My First Portfolio Page</a>
+          <a href="Myself.html" target="_blank" rel="noopener" class="day-link-btn">📄 About Myself Page</a>
+        </div>
+      </div>
+
+    </div><!-- end .modal-box -->
+  </div><!-- end #modal-webdev -->
+
+  <!-- ====================================================
+       MODAL: UI/UX DESIGN
+       ==================================================== -->
+  <div class="modal-overlay" id="modal-uiux" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <button class="modal-close" data-close="modal-uiux" aria-label="Close modal">✕</button>
+      <h2 class="modal-title">🎨 My Learning Index — UI/UX Design</h2>
+
+      <div class="day-index" data-group="ux">
+        <button class="day-tab active" data-day="ux-day1">Day 1</button>
+        <button class="day-tab" data-day="ux-day2">Day 2</button>
+        <button class="day-tab" data-day="ux-day3">Day 3</button>
+        <button class="day-tab" data-day="ux-day4">Day 4</button>
+        <button class="day-tab" data-day="ux-day5">Day 5</button>
+        <button class="day-tab" data-day="ux-day6">Day 6</button>
+        <button class="day-tab" data-day="ux-day7">Day 7</button>
+      </div>
+
+      <!-- UX Day 1 -->
+      <div class="day-content active" id="ux-day1">
+        <h3>Day 1 — Basics of UI</h3>
+        <p>On the first day, I learned what UI (User Interface) means — the visual layer of a product that users interact with. I studied design fundamentals: visual hierarchy, consistency, simplicity, and how color/typography affect user experience. I was introduced to Figma as our main design tool.</p>
+        <div class="uiux-placeholder">
+          <div class="placeholder-box">🖥️<br/>UI Basics<br/><small>Add your Day 1 Figma screenshot or notes here</small></div>
+        </div>
+      </div>
+
+      <!-- UX Day 2 -->
+      <div class="day-content" id="ux-day2">
+        <h3>Day 2 — Red Bull Project Start</h3>
+        <p>Day 2 was exciting! We started a real-world UI design project for Red Bull. I created a complete Design System including typography (Heading, Price Text, Small Heading), color palettes for Sugarfree, Energy Drink, and Zero variants, button styles, social media icons, and product card designs in Figma.</p>
+        <div class="assignment-images">
+          <figure class="assignment-img-wrap wide">
+            <img src="images/uiux/day2.jpg" alt="Day 2 — Red Bull UI Design in Figma" loading="lazy" />
+            <figcaption>Day 2 — Red Bull UI Design System: Typography, Color Palette, Logo &amp; Product Cards in Figma</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <!-- UX Day 3 -->
+      <div class="day-content" id="ux-day3">
+        <h3>Day 3 — Design &amp; Layout</h3>
+        <p>Day 3 focused on layout principles: 8-point grid system, spacing rules, alignment, visual balance, and using Figma frames with auto-layout. I learned how to create a structured, professional web layout that adapts cleanly across screen sizes.</p>
+        <div class="uiux-placeholder">
+          <div class="placeholder-box">📐<br/>Layout Design<br/><small>Add your Day 3 Figma layout screenshot here</small></div>
+        </div>
+      </div>
+
+      <!-- UX Day 4 -->
+      <div class="day-content" id="ux-day4">
+        <h3>Day 4 — Animation &amp; Micro-interactions</h3>
+        <p>Day 4 explored how animations and micro-interactions enhance user experience. I learned about hover effects, loading animations, transition timing, and created smooth interactive transitions in Figma prototype mode to make the design feel alive and responsive.</p>
+        <div class="uiux-placeholder">
+          <div class="placeholder-box">✨<br/>Animation Design<br/><small>Add your Day 4 animation screenshot here</small></div>
+        </div>
+      </div>
+
+      <!-- UX Day 5 -->
+      <div class="day-content" id="ux-day5">
+        <h3>Day 5 — Basics of UX</h3>
+        <p>Day 5 shifted to UX (User Experience): understanding users through research, creating user personas, mapping user journeys, and wireframing. I learned the 10 Nielsen heuristics and how to evaluate a design from the user's perspective rather than just the designer's eye.</p>
+        <div class="uiux-placeholder">
+          <div class="placeholder-box">🧠<br/>UX Research &amp; Wireframing<br/><small>Add your Day 5 wireframe or user journey here</small></div>
+        </div>
+      </div>
+
+      <!-- UX Day 6 -->
+      <div class="day-content" id="ux-day6">
+        <h3>Day 6 — Prototype (Red Bull Project)</h3>
+        <p>Day 6 was all about prototyping. I connected all the Red Bull design frames in Figma to create a fully interactive, clickable prototype. I set up prototype flows, transitions (Dissolve, Push, Slide), and tested the experience as if it were a real website. Click below to explore the prototype!</p>
+        <div class="uiux-placeholder figma-preview-box">
+          <div class="placeholder-box">🔗<br/>Red Bull Interactive Prototype<br/><small>Click the button below to open in Figma</small></div>
+        </div>
+        <div class="day-links">
+          <p class="links-label">🔗 View Live Prototype on Figma:</p>
+          <a href="https://www.figma.com/design/dJ9uq06juz5YLzWpvIkBPR/Untitled?node-id=42-2&t=kYhwRMxZu3r1bXYb-1"
+             target="_blank" rel="noopener noreferrer" class="day-link-btn figma-btn">
+            🎨 Open Red Bull Prototype in Figma
+          </a>
+        </div>
+      </div>
+
+      <!-- UX Day 7 -->
+      <div class="day-content" id="ux-day7">
+        <h3>Day 7 — My Final Project</h3>
+        <p>On the final day, I completed my full UI/UX design project applying everything: visual design, grid layout, color theory, typography, component design, and interactive prototyping. The result is a complete, professional-level Figma project. Click below to view my final work!</p>
+        <div class="uiux-placeholder figma-preview-box">
+          <div class="placeholder-box trophy">🏆<br/>My Complete Design Project<br/><small>Click the button below to open in Figma</small></div>
+        </div>
+        <div class="day-links">
+          <p class="links-label">🔗 View My Final Project on Figma:</p>
+          <a href="https://www.figma.com/design/dJ9uq06juz5YLzWpvIkBPR/Untitled?node-id=57-2&t=kYhwRMxZu3r1bXYb-1"
+             target="_blank" rel="noopener noreferrer" class="day-link-btn figma-btn">
+            🎨 Open My Final Figma Project
+          </a>
+        </div>
+      </div>
+
+    </div><!-- end .modal-box -->
+  </div><!-- end #modal-uiux -->
+
+  <!-- ===== FABLAB ===== -->
+  <section id="fablab" class="section section-alt">
+    <div class="section-label">04 — FabLab</div>
+    <h2 class="section-title">📜 FabLab Student Agreement</h2>
+    <div class="fablab-grid">
+      <div class="fablab-card fade-up">
+        <h3 class="fablab-card-title">🏛️ FabLab Responsibilities</h3>
+        <ul class="fablab-list">
+          <li>Teaching principles and practices of digital fabrication</li>
+          <li>Arranging lectures, meetings, and events</li>
+          <li>Evaluating student work and providing feedback</li>
+          <li>Offering clear standards</li>
+          <li>Certifying student progress</li>
+          <li>Supervising class preparation</li>
+          <li>Reviewing labs and instructors</li>
+          <li>Providing infrastructure and support</li>
+          <li>Fundraising</li>
+          <li>Managing program operations</li>
+          <li>Publicizing the program</li>
+        </ul>
+      </div>
+      <div class="fablab-card fade-up delay-1">
+        <h3 class="fablab-card-title">🎓 Student Responsibilities</h3>
+        <ul class="fablab-list">
+          <li>Attend lectures and participate in reviews</li>
+          <li>Develop and document projects</li>
+          <li>Report work honestly</li>
+          <li>Work safely</li>
+          <li>Maintain lab cleanliness</li>
+          <li>Participate in lab upkeep</li>
+          <li>Ensure fee payment</li>
+          <li>Follow safety guidelines</li>
+          <li>Promote respectful environment</li>
+        </ul>
+      </div>
+    </div>
+    <div class="fablab-declaration fade-up">
+      <p class="declaration-text"><em>Signed by committing this file in my repository</em></p>
+      <p class="declaration-name">— Komal Sanjay Maske</p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section">
+    <div class="section-label">05 — Contact</div>
+    <h2 class="section-title">Connect</h2>
+    <div class="contact-wrapper">
+      <div class="contact-info fade-left">
+        <p>Have a question or want to collaborate? Feel free to reach out!</p>
+        <ul class="contact-details">
+          <li>📞 9226731442</li>
+          <li>✉️ komalmaske241@gmail.com</li>
+          <li>📍 Morshi, Dist. Amravati — 444905</li>
+        </ul>
+      </div>
+      <form class="contact-form fade-right" id="contact-form" novalidate>
+        <div class="form-group">
+          <label for="fname">Your Name</label>
+          <input type="text" id="fname" name="name" placeholder="Your full name" required />
+        </div>
+        <div class="form-group">
+          <label for="femail">Your Email</label>
+          <input type="email" id="femail" name="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="fmessage">Message</label>
+          <textarea id="fmessage" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p class="form-status" id="form-status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>Designed &amp; Built by <strong>Komal Sanjay Maske</strong> · 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
