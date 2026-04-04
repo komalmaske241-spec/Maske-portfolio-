@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Komal Sanjay Maske | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="nav-logo">KSM</div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#modules">Modules</a></li>
+      <li><a href="#fablab">FabLab</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-bg-text" aria-hidden="true">KSM</div>
+    <div class="hero-content">
+      <p class="hero-greeting fade-up">Hello, I'm</p>
+      <h1 class="hero-name fade-up delay-1">
+        <span class="name-line">Komal</span>
+        <span class="name-line accent">Sanjay</span>
+        <span class="name-line">Maske</span>
+      </h1>
+      <p class="hero-subtitle fade-up delay-2">
+        B.E Electronics &amp; Telecommunication Student<br />
+        <span class="college">Shri Sant Gajanan Maharaj College of Engineering, Shegaon</span>
+      </p>
+      <div class="hero-buttons fade-up delay-3">
+        <a href="#contact" class="btn btn-primary">Contact Me</a>
+        <a href="#about" class="btn btn-outline">Learn More</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="section-label">01 — About</div>
+    <h2 class="section-title">Introduction</h2>
+    <div class="about-grid">
+      <div class="about-image-wrap fade-left">
+        <div class="about-img-placeholder">
+          <img src="images/profile.jpg" alt="Komal Sanjay Maske"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <div class="img-fallback">KSM</div>
+        </div>
+        <div class="about-accent-box"></div>
+      </div>
+      <div class="about-text fade-right">
+        <p>I am a passionate student exploring new technologies. I love building real-world projects that combine hardware and software, bridging the gap between the digital and physical world.</p>
+        <p>My journey in electronics and web development has taught me the power of creating solutions that make a difference.</p>
+        <ul class="about-details">
+          <li><span class="detail-icon">👤</span> Komal Sanjay Maske</li>
+          <li><span class="detail-icon">📞</span> 9226731442</li>
+          <li><span class="detail-icon">✉️</span> komalmaske241@gmail.com</li>
+          <li><span class="detail-icon">📍</span> Morshi, Dist. Amravati — 444905</li>
+        </ul>
+        <a href="Komal.pdf" class="btn btn-primary" download="Komal_Maske_CV.pdf">⬇ Download CV</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section section-alt">
+    <div class="section-label">02 — Skills</div>
+    <h2 class="section-title">What I Know</h2>
+    <div class="skills-grid">
+      <div class="skill-item fade-up">
+        <div class="skill-header"><span class="skill-name">HTML</span><span class="skill-percent">90%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+      </div>
+      <div class="skill-item fade-up delay-1">
+        <div class="skill-header"><span class="skill-name">CSS</span><span class="skill-percent">80%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+      </div>
+      <div class="skill-item fade-up delay-2">
+        <div class="skill-header"><span class="skill-name">JavaScript</span><span class="skill-percent">70%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+      </div>
+      <div class="skill-item fade-up delay-3">
+        <div class="skill-header"><span class="skill-name">C / C++</span><span class="skill-percent">75%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MODULES ===== -->
+  <section id="modules" class="section">
+    <div class="section-label">03 — Modules</div>
+    <h2 class="section-title">What I Study</h2>
+    <div class="modules-grid" id="modules-grid">
+      <div class="module-card clickable fade-up" data-modal="modal-webdev" tabindex="0" role="button">
+        <div class="module-icon">🌐</div>
+        <h3>Web Development</h3>
+        <span class="module-badge">Click to Explore</span>
+      </div>
+      <div class="module-card clickable fade-up delay-1" data-modal="modal-uiux" tabindex="0" role="button">
+        <div class="module-icon">🎨</div>
+        <h3>UI/UX Design</h3>
+        <span class="module-badge">Click to Explore</span>
+      </div>
+      <div class="module-card fade-up delay-2">
+        <div class="module-icon">✏️</div>
+        <h3>Computer Aided Design</h3>
+      </div>
+      <div class="module-card fade-up delay-3">
+        <div class="module-icon">🔒</div>
+        <h3>Cyber Security &amp; Networking</h3>
+      </div>
+      <div class="module-card fade-up">
+        <div class="module-icon">☕</div>
+        <h3>Java Programming</h3>
+      </div>
+      <div class="module-card fade-up delay-1">
+        <div class="module-icon">🤖</div>
+        <h3>AIML</h3>
+      </div>
+      <div class="module-card fade-up delay-2">
+        <div class="module-icon">🔌</div>
+        <h3>PCB</h3>
+      </div>
+      <div class="module-card fade-up delay-3">
+        <div class="module-icon">📡</div>
+        <h3>IoT</h3>
+      </div>
+      <div class="module-card fade-up">
+        <div class="module-icon">🖨️</div>
+        <h3>3D Printing &amp; Design</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       MODAL: WEB DEVELOPMENT
+       Each day has: Photo → Description → View Assignment button
+       ==================================================== -->
+  <div class="modal-overlay" id="modal-webdev" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <button class="modal-close" data-close="modal-webdev" aria-label="Close">✕</button>
+      <h2 class="modal-title">🌐 My Learning Journey — Web Development</h2>
+
+      <div class="day-index">
+        <button class="day-tab active" data-day="wd-day1">Day 1</button>
+        <button class="day-tab" data-day="wd-day2">Day 2</button>
+        <button class="day-tab" data-day="wd-day3">Day 3</button>
+        <button class="day-tab" data-day="wd-day4">Day 4</button>
+        <button class="day-tab" data-day="wd-day5">Day 5</button>
+        <button class="day-tab" data-day="wd-day6">Day 6</button>
+        <button class="day-tab" data-day="wd-day7">Day 7</button>
+      </div>
+
+      <!-- ===== WD DAY 1 ===== -->
+      <div class="day-content active" id="wd-day1">
+        <div class="day-card">
+          <div class="day-photo-wrap">
+            <img src="images/assignments/day1.jpg" alt="Day 1 Assignment" loading="lazy" />
+          </div>
+          <div class="day-info">
+            <h3>Day 1 — HTML Basics</h3>
+            <p>On the 1st day I learned the basics of HTML. I learned how to structure a webpage, explored various HTML tags like headings, paragraphs, bold, italic, underline, lists, marquee, font, and images. I also practiced adding audio and external links. My first assignment was creating an SSGMCE information page in VS Code.</p>
+            <div class="day-topics">
+              <span class="topic-tag">HTML Structure</span>
+              <span class="topic-tag">&lt;h1&gt; &lt;p&gt; &lt;b&gt; &lt;i&gt;</span>
+              <span class="topic-tag">Lists &amp; Links</span>
+              <span class="topic-tag">Images &amp; Audio</span>
+              <span class="topic-tag">Marquee &amp; Font</span>
+            </div>
+            <a href="Myself.html" target="_blank" rel="noopener" class="btn-view-assignment">
+              📄 View Assignment
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== WD DAY 2 ===== -->
+      <div class="day-content" id="wd-day2">
+        <div class="day-card">
+          <div class="day-photo-wrap">
+            <img src="images/assignments/day2.jpg" alt="Day 2 Assignment" loading="lazy" />
+          </div>
+          <div class="day-info">
+            <h3>Day 2 — Images, Tables &amp; Links</h3>
+            <p>Day 2 covered HTML tables using <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, <code>&lt;td&gt;</code> with attributes like <code>border</code>, <code>cellpadding</code>, <code>cellspacing</code>, <code>bgcolor</code>, <code>rowspan</code>, and <code>colspan</code>. I built a Branch/Seats/Cut-off table and a Student Name/Age/Gender info table.</p>
+            <div class="day-topics">
+              <span class="topic-tag">&lt;table&gt; &lt;tr&gt; &lt;th&gt; &lt;td&gt;</span>
+              <span class="topic-tag">rowspan &amp; colspan</span>
+              <span class="topic-tag">cellpadding &amp; cellspacing</span>
+              <span class="topic-tag">bgcolor attribute</span>
+            </div>
+            <a href="marks3.html" target="_blank" rel="noopener" class="btn-view-assignment">
+              📄 View Assignment
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== WD DAY 3 ===== -->
+      <div class="day-content" id="wd-day3">
+        <div class="day-card">
+          <div class="day-photo-wrap">
+            <img src="images/assignments/day3.jpg" alt="Day 3 Assignment" loading="lazy" />
+          </div>
+          <div class="day-info">
+            <h3>Day 3 — Introduction to CSS Selectors</h3>
+            <p>Day 3 introduced CSS. I learned element selectors — styling all <code>&lt;p&gt;</code> tags with <code>color: blue</code> and <code>font-size: 18px</code>. I also learned class selectors using <code>.highlight</code> with brown background and cadetblue text color. I practiced both types in separate HTML files.</p>
+            <div class="day-topics">
+              <span class="topic-tag">Element Selector</span>
+              <span class="topic-tag">Class Selector</span>
+              <span class="topic-tag">color &amp; font-size</span>
+              <span class="topic-tag">background-color</span>
+              <span class="topic-tag">&lt;style&gt; tag</span>
+            </div>
+            <a href="My_journey.html" target="_blank" rel="noopener" class="btn-view-assignment">
+              📄 View Assignment
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== WD DAY 4 ===== -->
+      <div class="day-content" id="wd-day4">
+        <div class="day-card">
+          <div class="day-photo-wrap">
+            <img src="images/assignments/day4.jpg" alt="Day 4 Assignment" loading="lazy" />
+          </div>
+          <div class="day-info">
+            <h3>Day 4 — CSS Flexbox Layout</h3>
+            <p>Day 4 explored CSS Flexbox. I used <code>display: flex</code>, <code>justify-content: space-between</code>, <code>align-items: center</code>, and <code>flex-direction: row</code> to arrange 8 numbered boxes inside a blue-violet container. Each box had dark sea green background and brown text.</p>
+            <div class="day-topics">
+              <span class="topic-tag">display: flex</span>
+              <span class="topic-tag">justify-content</span>
+              <span class="topic-tag">align-items</span>
+              <span class="topic-tag">flex-direction</span>
+              <span class="topic-tag">height &amp; width</span>
+            </div>
+            <a href="My_journey.html" target="_blank" rel="noopener" class="btn-view-assignment">
+              📄 View Assignment
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== WD DAY 5 ===== -->
+      <div class="day-content" id="wd-day5">
+        <div class="day-card">
+          <div class="day-photo-wrap">
+            <img src="images/assignments/day5.jpg" alt="Day 5 Assignment" loading="lazy" />
+          </div>
+          <div class="day-info">
+            <h3>Day 5 — Advanced CSS &amp; To-Do App Styling</h3>
+            <p>Day 5 covered advanced CSS properties. I styled a To-Do List app container with <code>background-color: rgb(156,222,252)</code>, <code>border-radius: 15px</code>, and <code>box-shadow: 4px 5px 6px</code>. The body had display flex with center alignment and grey background. I also added a styled header with font-size 1.7em and font-weight 900.</p>
+            <div class="day-topics">
+              <span class="topic-tag">border-radius</span>
+              <span class="topic-tag">box-shadow</span>
+              <span class="topic-tag">padding &amp; margin</span>
+              <span class="topic-tag">font-weight</span>
+              <span class="topic-tag">CSS Box Model</span>
+            </div>
+            <a href="index.html" target="_blank" rel="noopener" class="btn-view-assignment">
+              📄 View Assignment (To-Do App)
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== WD DAY 6 ===== -->
+      <div class="day-content" id="wd-day6">
+        <div class="day-card">
+          <div class="day-photo-wrap">
+            <img src="images/assignments/day6.jpg" alt="Day 6 Assignment" loading="lazy" />
+          </div>
+          <div class="day-info">
+            <h3>Day 6 — JavaScript Basics</h3>
+            <p>Day 6 introduced JavaScript. I declared variables using <code>var</code>, performed arithmetic (subtraction: <code>var sub = b - a</code>), used comparison operators (<code>&gt;</code>, <code>&gt;&gt;</code>), logical operators, and <code>console.log()</code> to print output. Running in Node.js terminal gave outputs: 100, true, 2, 0, 1.</p>
+            <div class="day-topics">
+              <span class="topic-tag">var variables</span>
+              <span class="topic-tag">console.log()</span>
+              <span class="topic-tag">Arithmetic Operators</span>
+              <span class="topic-tag">Comparison Operators</span>
+              <span class="topic-tag">Node.js Terminal</span>
+            </div>
+            <div class="assignment-links-row">
+              <a href="Komal_form.html" target="_blank" rel="noopener" class="btn-view-assignment">
+                📄 HTML Form Assignment
+              </a>
+              <a href="marks3.html" target="_blank" rel="noopener" class="btn-view-assignment secondary">
+                📄 Marks Table
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== WD DAY 7 ===== -->
+      <div class="day-content" id="wd-day7">
+        <div class="day-card">
+          <div class="day-photo-wrap">
+            <img src="images/assignments/day7.jpg" alt="Day 7 Assignment" loading="lazy" />
+          </div>
+          <div class="day-info">
+            <h3>Day 7 — Advanced JavaScript &amp; Final Projects</h3>
+            <p>Day 7 covered advanced JavaScript: DOM manipulation, event listeners using <code>onclick</code>, dynamically adding list items, and building a complete interactive To-Do List app. I also finalized my personal Portfolio webpage as the capstone project of the entire Web Development module.</p>
+            <div class="day-topics">
+              <span class="topic-tag">DOM Manipulation</span>
+              <span class="topic-tag">addEventListener</span>
+              <span class="topic-tag">innerHTML</span>
+              <span class="topic-tag">Functions</span>
+              <span class="topic-tag">Interactive App</span>
+            </div>
+            <div class="assignment-links-row">
+              <a href="Portfolio.html" target="_blank" rel="noopener" class="btn-view-assignment">
+                🌐 My Portfolio Page
+              </a>
+              <a href="Myself.html" target="_blank" rel="noopener" class="btn-view-assignment secondary">
+                📄 About Myself Page
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end .modal-box -->
+  </div><!-- end #modal-webdev -->
+
+  <!-- ====================================================
+       MODAL: UI/UX DESIGN
+       Day 2 has real photo, others have placeholders
+       ==================================================== -->
+  <div class="modal-overlay" id="modal-uiux" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <button class="modal-close" data-close="modal-uiux" aria-label="Close">✕</button>
+      <h2 class="modal-title">🎨 My Learning Index — UI/UX Design</h2>
+
+      <div class="day-index">
+        <button class="day-tab active" data-day="ux-day1">Day 1</button>
+        <button class="day-tab" data-day="ux-day2">Day 2</button>
+        <button class="day-tab" data-day="ux-day3">Day 3</button>
+        <button class="day-tab" data-day="ux-day4">Day 4</button>
+        <button class="day-tab" data-day="ux-day5">Day 5</button>
+        <button class="day-tab" data-day="ux-day6">Day 6</button>
+        <button class="day-tab" data-day="ux-day7">Day 7</button>
+      </div>
+
+      <!-- UX Day 1 -->
+      <div class="day-content active" id="ux-day1">
+        <h3>Day 1 — Basics of UI</h3>
+        <p>On the first day, I learned what UI (User Interface) means — the visual layer of a product that users interact with. I studied design fundamentals: visual hierarchy, consistency, simplicity, and how color and typography affect user experience. I was introduced to Figma as the main design tool.</p>
+        <div class="uiux-placeholder">
+          <div class="placeholder-box">🖥️<br/>UI Basics Notes<br/><small>Add your Day 1 Figma screenshot here</small></div>
+        </div>
+      </div>
+
+      <!-- UX Day 2 — REAL PHOTO -->
+      <div class="day-content" id="ux-day2">
+        <div class="day-card">
+          <div class="day-photo-wrap wide">
+            <img src="images/uiux/day2.jpg" alt="Day 2 — Red Bull UI Design in Figma" loading="lazy" />
+          </div>
+          <div class="day-info">
+            <h3>Day 2 — Red Bull Project Start</h3>
+            <p>Day 2 was exciting! We started a real-world UI design project for Red Bull in Figma. I created a complete Design System including typography (Heading, Price Text, Small Heading), color palettes for Sugarfree, Energy Drink, and Zero variants, button styles, social media follow icons, and product card designs.</p>
+            <div class="day-topics">
+              <span class="topic-tag">Design System</span>
+              <span class="topic-tag">Typography</span>
+              <span class="topic-tag">Color Palette</span>
+              <span class="topic-tag">Product Cards</span>
+              <span class="topic-tag">Figma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- UX Day 3 -->
+      <div class="day-content" id="ux-day3">
+        <h3>Day 3 — Design &amp; Layout</h3>
+        <p>Day 3 focused on layout principles: 8-point grid system, spacing rules, alignment, visual balance, and using Figma frames with auto-layout. I learned how to create a structured, professional web layout that adapts cleanly across screen sizes.</p>
+        <div class="uiux-placeholder">
+          <div class="placeholder-box">📐<br/>Layout Design<br/><small>Add your Day 3 Figma layout screenshot here</small></div>
+        </div>
+      </div>
+
+      <!-- UX Day 4 -->
+      <div class="day-content" id="ux-day4">
+        <h3>Day 4 — Animation &amp; Micro-interactions</h3>
+        <p>Day 4 explored how animations and micro-interactions enhance user experience. I learned about hover effects, loading animations, transition timing, and created smooth interactive transitions in Figma prototype mode to make designs feel alive and responsive.</p>
+        <div class="uiux-placeholder">
+          <div class="placeholder-box">✨<br/>Animation Design<br/><small>Add your Day 4 animation screenshot here</small></div>
+        </div>
+      </div>
+
+      <!-- UX Day 5 -->
+      <div class="day-content" id="ux-day5">
+        <h3>Day 5 — Basics of UX</h3>
+        <p>Day 5 shifted to UX (User Experience): understanding users through research, creating user personas, mapping user journeys, and wireframing. I learned the 10 Nielsen heuristics and how to evaluate a design from the user's perspective rather than just the designer's eye.</p>
+        <div class="uiux-placeholder">
+          <div class="placeholder-box">🧠<br/>UX Research &amp; Wireframing<br/><small>Add your Day 5 wireframe or user journey here</small></div>
+        </div>
+      </div>
+
+      <!-- UX Day 6 -->
+      <div class="day-content" id="ux-day6">
+        <h3>Day 6 — Prototype (Red Bull Project)</h3>
+        <p>Day 6 was all about prototyping! I connected all the Red Bull design frames in Figma to create a fully interactive, clickable prototype with transitions (Dissolve, Push, Slide) and tested the user flow as if it were a real live website.</p>
+        <div class="uiux-placeholder">
+          <div class="placeholder-box">🔗<br/>Red Bull Prototype<br/><small>Click the button below to open live prototype</small></div>
+        </div>
+        <div class="day-links">
+          <p class="links-label">🔗 View Live Prototype on Figma:</p>
+          <a href="https://www.figma.com/design/dJ9uq06juz5YLzWpvIkBPR/Untitled?node-id=42-2&t=kYhwRMxZu3r1bXYb-1"
+             target="_blank" rel="noopener noreferrer" class="day-link-btn figma-btn">
+            🎨 Open Red Bull Prototype in Figma
+          </a>
+        </div>
+      </div>
+
+      <!-- UX Day 7 -->
+      <div class="day-content" id="ux-day7">
+        <h3>Day 7 — My Final Project</h3>
+        <p>On the final day, I completed my full UI/UX design project — applying visual design, grid layout, color theory, typography, component design, and interactive prototyping. The result is a complete, professional-level Figma project. Click below to view my final work!</p>
+        <div class="uiux-placeholder">
+          <div class="placeholder-box">🏆<br/>My Complete Design Project<br/><small>Click the button below to open in Figma</small></div>
+        </div>
+        <div class="day-links">
+          <p class="links-label">🔗 View My Final Project on Figma:</p>
+          <a href="https://www.figma.com/design/dJ9uq06juz5YLzWpvIkBPR/Untitled?node-id=57-2&t=kYhwRMxZu3r1bXYb-1"
+             target="_blank" rel="noopener noreferrer" class="day-link-btn figma-btn">
+            🎨 Open My Final Figma Project
+          </a>
+        </div>
+      </div>
+
+    </div><!-- end .modal-box -->
+  </div><!-- end #modal-uiux -->
+
+  <!-- ===== FABLAB ===== -->
+  <section id="fablab" class="section section-alt">
+    <div class="section-label">04 — FabLab</div>
+
+    <!-- FabLab Logo -->
+    <div class="fablab-logo-wrap fade-up">
+      <img src="images/fablab-logo.jpg" alt="FabLab Logo" class="fablab-logo" />
+    </div>
+
+    <h2 class="section-title">📜 FabLab Student Agreement</h2>
+
+    <div class="fablab-grid">
+      <div class="fablab-card fade-up">
+        <h3 class="fablab-card-title">🏛️ FabLab Responsibilities</h3>
+        <ul class="fablab-list">
+          <li>Teaching principles and practices of digital fabrication</li>
+          <li>Arranging lectures, meetings, and events</li>
+          <li>Evaluating student work and providing feedback</li>
+          <li>Offering clear standards</li>
+          <li>Certifying student progress</li>
+          <li>Supervising class preparation</li>
+          <li>Reviewing labs and instructors</li>
+          <li>Providing infrastructure and support</li>
+          <li>Fundraising</li>
+          <li>Managing program operations</li>
+          <li>Publicizing the program</li>
+        </ul>
+      </div>
+      <div class="fablab-card fade-up delay-1">
+        <h3 class="fablab-card-title">🎓 Student Responsibilities</h3>
+        <ul class="fablab-list">
+          <li>Attend lectures and participate in reviews</li>
+          <li>Develop and document projects</li>
+          <li>Report work honestly</li>
+          <li>Work safely</li>
+          <li>Maintain lab cleanliness</li>
+          <li>Participate in lab upkeep</li>
+          <li>Ensure fee payment</li>
+          <li>Follow safety guidelines</li>
+          <li>Promote respectful environment</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="fablab-declaration fade-up">
+      <p class="declaration-text"><em>Signed by committing this file in my repository</em></p>
+      <p class="declaration-name">— Komal Sanjay Maske</p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section">
+    <div class="section-label">05 — Contact</div>
+    <h2 class="section-title">Connect</h2>
+    <div class="contact-wrapper">
+      <div class="contact-info fade-left">
+        <p>Have a question or want to collaborate? Feel free to reach out!</p>
+        <ul class="contact-details">
+          <li>📞 9226731442</li>
+          <li>✉️ komalmaske241@gmail.com</li>
+          <li>📍 Morshi, Dist. Amravati — 444905</li>
+        </ul>
+      </div>
+      <form class="contact-form fade-right" id="contact-form" novalidate>
+        <div class="form-group">
+          <label for="fname">Your Name</label>
+          <input type="text" id="fname" name="name" placeholder="Your full name" required />
+        </div>
+        <div class="form-group">
+          <label for="femail">Your Email</label>
+          <input type="email" id="femail" name="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="fmessage">Message</label>
+          <textarea id="fmessage" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p class="form-status" id="form-status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>Designed &amp; Built by <strong>Komal Sanjay Maske</strong> · 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
